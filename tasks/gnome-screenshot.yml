@@ -1,0 +1,21 @@
+- name: Create /etc/dconf/db/local.d/ folder
+  file:
+    path: etc/dconf/db/local.d/
+    state: directory
+
+- name: Create /etc/dconf/profile/user file
+  copy:
+    src: dconf-user
+    dest: /etc/dconf/profile/user
+
+- name: Install settings
+  copy:
+    src: 00-screenshot-keybinding
+    dest: /etc/dconf/db/local.d/
+  notify: Update dconf
+
+- name: Install set-screenshot-dir.sh in /etc/profile.d
+  template:
+    src: set-screenshot-dir.sh
+    dest: /etc/profile.d/
+

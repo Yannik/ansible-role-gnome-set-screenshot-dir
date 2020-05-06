@@ -1,0 +1,40 @@
+[org/gnome/settings-daemon/plugins/media-keys]
+window-screenshot-clip=['']
+area-screenshot-clip=['']
+window-screenshot=['']
+screenshot-clip=['']
+area-screenshot=['']
+screenshot=['']
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom_screenshot0]
+name='area-screenshot'
+command='gnome-screenshot -a'
+binding='<Shift>Print'
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom_screenshot1]
+name='area-screenshot-clip'
+command='gnome-screenshot -a -c'
+binding='<Ctrl><Shift>Print'
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom_screenshot2]
+name='screenshot'
+command='gnome-screenshot'
+binding='Print'
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom_screenshot3]
+name='screenshot-clip'
+command='gnome-screenshot -c'
+binding='<Ctrl>Print'
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom_screenshot4]
+name='window-screenshot'
+command='gnome-screenshot -w'
+binding='<Alt>Print'
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom_screenshot5]
+name='window-screenshot-clip'
+command='gnome-screenshot -w -c'
+binding='<Ctrl><Alt>Print'
+
+[org/gnome/settings-daemon/plugins/media-keys]
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom_screenshot0/','/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom_screenshot1/','/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom_screenshot2/','/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom_screenshot3/','/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom_screenshot4/','/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom_screenshot5/']

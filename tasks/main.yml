@@ -1,0 +1,2 @@
+- import_tasks: gnome-screenshot.yml
+  tags: gnome-screenshot
